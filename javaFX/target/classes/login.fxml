@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="679.0" opacity="0.65">
+         <image>
+            <Image url="@1.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="143.0" layoutY="86.0" prefHeight="331.0" prefWidth="394.0" style="-fx-background-color: #212121;">
+         <children>
+            <Label layoutX="132.0" layoutY="25.0" prefHeight="46.0" prefWidth="103.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="132.0" layoutY="71.0" prefHeight="5.0" prefWidth="103.0" style="-fx-background-color: #76ff03;" />
+            <TextField fx:id="emailField" layoutX="129.0" layoutY="114.0" prefHeight="25.0" prefWidth="233.0" promptText="Email address" style="-fx-background-color: #212121;">
+               <font>
+                  <Font name="Tahoma" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" height="21.56" radius="11.5625" width="26.69">
+                     <color>
+                        <Color red="0.4627451002597809" green="1.0" blue="0.0117647061124444" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="129.0" layoutY="169.0" prefHeight="25.0" prefWidth="233.0" promptText="Password" style="-fx-background-color: #212121;">
+               <font>
+                  <Font name="Tahoma" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" height="21.56" radius="11.5625" width="26.69">
+                     <color>
+                        <Color red="0.4627451002597809" green="1.0" blue="0.0117647061124444" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="85.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="40.0" prefWidth="233.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="14.0" />
+               </font>
+            </Button>
+            
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="79.0" layoutY="161.0">
+               <image>
+                  <Image url="@icons8-lock-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="79.0" layoutY="111.0">
+               <image>
+                  <Image url="@icons8-user-50-2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
